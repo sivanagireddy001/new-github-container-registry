@@ -2,7 +2,7 @@ name: Push Docker image to GitHub Container Registry
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
