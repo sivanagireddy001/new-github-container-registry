@@ -16,6 +16,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
       - name: Build Docker image
-        run: docker build -t ghcr.io/${{ github.repository }}/my-app .
+        run: docker build -t ghcr.io/${{ github.actor }}/my-app1 .
       - name: Push Docker image
-        run: docker push ghcr.io/${{ github.repository }}/my-app
+        run: docker push ghcr.io/${{ github.actor }}/my-app1
